@@ -12,13 +12,11 @@ def mean_median(array_input):
         median = (array_input[length // 2 - 1] + array_input[length// 2])/2
         mean = total / length
         return mean,median
-    elif length != 0:
+    else:
         median = array_input[len(array_input)//2]
         mean = total / length
         return mean,median
 
-
-   
 
 if __name__ == '__main__':
     print(mean_median([1, 2, 3, 4])) # (2.5, 2.5)
